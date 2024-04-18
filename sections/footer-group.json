@@ -24,14 +24,14 @@
           "settings": {
             "image": "shopify://shop_images/bank.webp",
             "image_width": 200,
-            "alignment": "center"
+            "alignment": ""
           }
         },
-        "footer-2": {
-          "type": "text",
+        "custom_newsletter_HKM8jc": {
+          "type": "custom_newsletter",
           "settings": {
             "heading": "STAY IN TOUCH",
-            "subtext": "<p>Stay updated for new items & special offer</p>"
+            "newsletter_subtext": "<p>Stay updated for new items & special offer</p>"
           }
         }
       },
@@ -39,10 +39,10 @@
         "footer-0",
         "footer-1",
         "image_P8eCc7",
-        "footer-2"
+        "custom_newsletter_HKM8jc"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
@@ -55,9 +55,54 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "footer_image_custom_wK7Ati": {
+      "type": "footer-image-custom",
+      "blocks": {
+        "footer_image_4zPeV9": {
+          "type": "footer_image",
+          "settings": {
+            "image": "shopify://shop_images/ankerico.png"
+          }
+        },
+        "footer_image_rnhyrM": {
+          "type": "footer_image",
+          "settings": {
+            "image": "shopify://shop_images/soundcore_1.webp"
+          }
+        },
+        "footer_image_tkFgjx": {
+          "type": "footer_image",
+          "settings": {
+            "image": "shopify://shop_images/ankerwork.webp"
+          }
+        },
+        "footer_image_NeMEkH": {
+          "type": "footer_image",
+          "settings": {
+            "image": "shopify://shop_images/anker_inovation.webp"
+          }
+        },
+        "footer_image_FWmcJF": {
+          "type": "footer_image",
+          "settings": {
+            "image": "shopify://shop_images/nebula_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "footer_image_4zPeV9",
+        "footer_image_rnhyrM",
+        "footer_image_tkFgjx",
+        "footer_image_NeMEkH",
+        "footer_image_FWmcJF"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "footer_image_custom_wK7Ati"
   ]
 }

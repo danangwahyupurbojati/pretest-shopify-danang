@@ -1,0 +1,40 @@
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 16px; background: #f3f3f3; padding-bottom: 36px;">
+  {% for block in section.blocks %}
+    {%- case block.type -%}
+      {% when 'footer_image' %}
+        {% if block.settings.image %}
+          <div>
+            {{ block.settings.image | image_url: width: 100 | image_tag }}
+          </div>
+        {% endif %}
+    {%- endcase -%}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Custom Footer Image",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "footer_image",
+      "name": "image footer",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Footer Image",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
